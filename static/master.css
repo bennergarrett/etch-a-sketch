@@ -1,13 +1,15 @@
 :root {
   --grid-cols: 1;
   --grid-rows: 1;
+  --random-color: #000000;
+  --grey-scale: 50%;
 }
 
 
 .squareGrid{
     /* background-color: blue; */
-    width: 90%;
-    height: 600px;
+    width: 600px;
+    height: 400px;
 
     display:grid;
     /* grid-gap: 1em; */
@@ -21,19 +23,46 @@
 
 .square {
   display: flex;
-  /* padding: 1em; */
-  border: 1px solid #ddd;
-  /* text-align: center; */
-  background-color: cyan;
+
+  background-color: grey;
 
   /* height: auto;
   width: auto; */
 }
 
+
 .content{
   display: flex;
   padding:  1em;
 }
+
+
+.textboxSize{
+  display: inline-block;
+  width: 3em;
+
+}
+.btnSize{
+  display: inline-block;
+
+}
+
+.defaultColor{
+  background-color: #000000;
+
+}
+
+.colorChange{
+  background-color: var(--random-color);
+  /* opacity: var(--grey-scale); */
+}
+
+.greyScale{
+  background-color: black;
+  opacity: var(--grey-scale);
+
+}
+
 
 footer{
 

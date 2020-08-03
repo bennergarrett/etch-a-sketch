@@ -12,37 +12,32 @@
     <body>
         <div class='container'>
             <div class='jumbotron'>
-                <h1>Etch-a-Sketch!</h1>
+                <h1 class='title'>Etch-a-Sketch!</h1>
             </div>
         </div>  
 
-        <div class='container'>
-            <button class='clear'>Clear</button>
-                <input type="text" id="size" name="size">
-                <button type='submit' class='size' id='size'>Change size</button>
 
-
-            <button class="colorChange">Change Color</button>
-            <button class="random">Magic Wand</button>
-
-        </div>
-
-        <div class = 'container content'>
-            <div class='item 1'>
-                <p>im in itme 1</p>
+        <div class = 'content'>
+            <div class='sideMenu card'>
+                <p>Options!</p>
+                <button class='clearBtn'>Clear</button>
+                
+                <div class= 'list-group-item'>
+                    <input type="text" id="size" name="size"class='textboxSize'>
+                    <button type='submit' class='btnSize' onclick="resize();">Change size</button>
+                </div>
+    
+                <button class="defaultBtn">Default Color</button>
+                <button class="scaleBtn">Grey Scale</button>
+                <button class="randomBtn">Magic Wand</button>
             </div>
             <div class='squareGrid container'></div>
-            <div class='item 3'>
-                <p>I'm in item 2</p>
-            </div>
+ 
         </div>
 
         <footer>
-            <p>I'm the footer</p>
+
         </footer>
-
-
-
     
     </body>
     <!-- bootsrap -->
